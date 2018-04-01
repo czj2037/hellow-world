@@ -32,3 +32,17 @@
  
 4.类的详解，包括公有私有，静态等等，但不涉及继承
  https://www.cnblogs.com/wupeiqi/p/4766801.html
+
+5.copy
+ python 2.7 
+ import copy
+
+ 5.1 基本类型copy
+  a=[1,2,3]
+  b=copy.copy(a)
+ 5.2 复杂类型copy
+  a=[1,2,3,[4,5]]
+  b=copy.deepcopy(a)
+ 
+ 这两种 a,b 都指向不同对象
+ 
