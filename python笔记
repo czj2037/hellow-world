@@ -33,16 +33,27 @@
 4.类的详解，包括公有私有，静态等等，但不涉及继承
  https://www.cnblogs.com/wupeiqi/p/4766801.html
 
-5.copy
- python 2.7 
- import copy
+5.List 基本
+ a.copy
+    python 2.7 
+    1 基本类型copy
+    import copy
+     a=[1,2,3]
+     b=copy.copy(a)
+     c=a[:]
+    2 复杂类型copy
+    import copy
+     a=[1,2,3,[4,5]]
+     b=copy.deepcopy(a)
 
- 5.1 基本类型copy
-  a=[1,2,3]
-  b=copy.copy(a)
- 5.2 复杂类型copy
-  a=[1,2,3,[4,5]]
-  b=copy.deepcopy(a)
+    这两种 a,b 都指向不同对象
  
- 这两种 a,b 都指向不同对象
+  b.合并多个list
+    1 +
+    2 extend
+    3 l1[0:0]=l2  就是将l2插入到l1的0位置
+    
+  c.删除某个值
+   a.pop(index) 默认是最后一个,会返回值
+   del a[index]
  
