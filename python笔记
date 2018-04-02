@@ -60,11 +60,11 @@
    a.pop(index) 默认是最后一个,会返回值
    del a[index]
  
- 6. is in  条件运算符
-  x is y   x和y是两个完全相同的对象
+ 6. is:同一性; in：成员资格 
+ x is y   x和y是两个完全相同的对象
   举例
   x=[1,2,3] y=x  z=[1,2,3]
   True: x==y x==z x is y
   False: x is y
   
-  in 表示成员资格 常用于序列（字符串是序列的一种）
+  in 表示成员资格 常用于序列（字符串是序列的一种） 字典
