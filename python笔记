@@ -59,7 +59,10 @@
   c.删除某个值
    a.pop(index) 默认是最后一个,会返回值
    del a[index]
- 
+  
+  d.负数索引
+   a=[1,2,3]
+   a[-1]==3 True
  6. is:同一性; in：成员资格 
  x is y   x和y是两个完全相同的对象
   举例
@@ -68,3 +71,12 @@
   False: x is y
   
   in 表示成员资格 常用于序列（字符串是序列的一种） 字典
+  
+ 7.函数式编程
+  map，filter，reduce
+  
+  any，all
+  
+  eunumerate
+
+
