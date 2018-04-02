@@ -1,4 +1,4 @@
-1.isinstance type
+1.isinstance type is
 
  type()不会认为子类是一种父类类型。
  isinstance()会认为子类是一种父类类型
@@ -6,6 +6,9 @@
   即使需要检查类型，也应该用isinstance来判断，这样你期望类型的subclass也能正常被处理
  （比如，一个函数需要处理Message类型，那么它应该也能处理Message的子类型MyMessage，
   所以应该使用isinstance(arg,Message)这样来判断而不是type(arg) == Message来判断）
+  
+
+
   
 2.迭代工具
  2.1 zip的使用
@@ -57,3 +60,11 @@
    a.pop(index) 默认是最后一个,会返回值
    del a[index]
  
+ 6. is in  条件运算符
+  x is y   x和y是两个完全相同的对象
+  举例
+  x=[1,2,3] y=x  z=[1,2,3]
+  True: x==y x==z x is y
+  False: x is y
+  
+  in 表示成员资格 常用于序列（字符串是序列的一种）
