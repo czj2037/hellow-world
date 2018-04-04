@@ -79,4 +79,6 @@
   
   eunumerate zip
 
+8. classmethod: 会调用类有关的参数，常用于构造，（比如类似于c++的重载）
+   staticmethod: 不会调用和类有关的任何方法
 
