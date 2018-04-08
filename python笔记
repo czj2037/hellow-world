@@ -81,4 +81,16 @@
 
 8. classmethod: 会调用类有关的参数，常用于构造，（比如类似于c++的重载）
    staticmethod: 不会调用和类有关的任何方法
+   
+9.itertools-Functions creating iterators for efficient looping
+   import itertools
+   包含排列 组合 笛卡尔积 
+    count,cycle,repeat,
+    chain,compress,dropwhile,groupby,ifilter....等等
+   参考网址 https://docs.python.org/2.7/library/itertools.html?highlight=itertools
+           https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001415616001996f6b32d80b6454caca3d33c965a07611f000
+           https://blog.csdn.net/specter11235/article/details/71189486
+
+
+
 
