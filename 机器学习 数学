@@ -10,6 +10,8 @@ https://blog.csdn.net/jbb0523/article/details/50596604
 酉矩阵 -- 正交矩阵
 Hermite矩阵 -- 对称矩阵
 
+正规矩阵 -- 酉对角化 -- AA*=A*A (A*表示酉矩阵)
+
 4.线性代数书 华东理工 下载
 http://www.book118.com/shulihua/html/shulihua_354640.html
 
@@ -18,3 +20,4 @@ http://blog.sina.com.cn/s/blog_4fffd58a0101n4mx.html
 
 6.Cayley-Hamilton定理证明
 https://blog.csdn.net/u010798503/article/details/53326060
+
