@@ -10,3 +10,5 @@ https://www.cnblogs.com/guigujun/p/6134828.html
 
 4. 面试题
 https://blog.csdn.net/sqiu_11/article/details/77657840
+5. 机器学习实战地址
+https://github.com/pbharrin/machinelearninginaction.git
