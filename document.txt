@@ -12,3 +12,6 @@ https://www.cnblogs.com/guigujun/p/6134828.html
 https://blog.csdn.net/sqiu_11/article/details/77657840
 5. 机器学习实战地址
 https://github.com/pbharrin/machinelearninginaction.git
+
+6. python常见库
+https://www.lfd.uci.edu/~gohlke/pythonlibs/
