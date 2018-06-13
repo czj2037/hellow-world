@@ -21,3 +21,6 @@ http://www.cnblogs.com/tornadomeet/tag/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/defa
 
 8.台湾教授
 https://www.csie.ntu.edu.tw/~htlin/mooc/
+
+9.书
+Python 数据处理
