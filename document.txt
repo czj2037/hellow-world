@@ -18,3 +18,6 @@ https://www.lfd.uci.edu/~gohlke/pythonlibs/
 
 7.机器学习 学霸笔记
 http://www.cnblogs.com/tornadomeet/tag/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/default.html?page=2
+
+8.台湾教授
+https://www.csie.ntu.edu.tw/~htlin/mooc/
