@@ -24,3 +24,17 @@ https://www.csie.ntu.edu.tw/~htlin/mooc/
 
 9.书
 Python 数据处理
+
+10.conda包管理
+
+conda install ipykernel  
+jupyter notebook 
+source activate 环境名称 
+python -m ipykernel install --user --name base --display-name "Python (base)"  
+
+https://www.jianshu.com/p/17288627b994
+
+https://www.jianshu.com/p/2f3be7781451
+
+11.书
+《利用python进行数据分析》
