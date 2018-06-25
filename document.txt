@@ -42,3 +42,12 @@ https://www.jianshu.com/p/2f3be7781451
 
 12.matplotlib
 https://www.jianshu.com/p/aa4150cf6c7f?winzoom=1
+
+13. pycharm
+function name should be lowercase
+File –>Settings–>Editor–>Inspections–>Python–>PEP 8 naming convention violation
+
+在右下角有一个Ignored errors列表控件，添加 
+N802 
+N803 
+N806
