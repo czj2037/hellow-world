@@ -48,6 +48,6 @@ function name should be lowercase
 File –>Settings–>Editor–>Inspections–>Python–>PEP 8 naming convention violation
 
 在右下角有一个Ignored errors列表控件，添加 
-N802 
-N803 
+N802
+N803
 N806
