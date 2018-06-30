@@ -51,3 +51,15 @@ File –>Settings–>Editor–>Inspections–>Python–>PEP 8 naming convention 
 N802
 N803
 N806
+
+14. 
+   numpy
+    https://www.cnblogs.com/keepgoingon/p/7137448.html
+  matplotlib
+    https://www.jianshu.com/p/aa4150cf6c7f?winzoom=1
+
+15.numpy中的multiply、*、matul 的区别
+https://www.cnblogs.com/xiaodongsuibi/p/8305921.html
+
+16.svm
+https://blog.csdn.net/luoshixian099/article/details/51227754
