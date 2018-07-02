@@ -71,3 +71,5 @@ http://www.cnblogs.com/pinard/
 
 17.学习专栏
 https://zhuanlan.zhihu.com/p/27662928
+https://zhuanlan.zhihu.com/pytlab
+http://www.cnblogs.com/pinard/default.html?page=9
