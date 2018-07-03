@@ -75,3 +75,8 @@ http://www.cnblogs.com/pinard/
 https://zhuanlan.zhihu.com/p/27662928
 https://zhuanlan.zhihu.com/pytlab
 http://www.cnblogs.com/pinard/default.html?page=9
+
+18.
+     eta = 2.0 * oS.X[i, :]*oS.X[j, :].T - oS.X[i, :]*oS.X[i, :].T - oS.X[j, :]*oS.X[j, :].T
+     #如果最优修改量大于0，则不做处理直接跳出本次循环，这里对真实SMO做了简化处理
+     if eta >= 0: print("eta>=0"); return 0
