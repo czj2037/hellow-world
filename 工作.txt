@@ -1,3 +1,2 @@
 1.bootsrap switch
 http://www.bootcdn.cn/bootstrap-switch/readme/
-3.testb2
