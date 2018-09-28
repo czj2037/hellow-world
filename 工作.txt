@@ -2,4 +2,6 @@
 http://www.bootcdn.cn/bootstrap-switch/readme/
 
 2. L1 正则化，L2正则化
- plot 图稍微看一下
+ plot 图稍微看一下 //todo
+
+3. 贝叶斯用法
