@@ -5,3 +5,7 @@ http://www.bootcdn.cn/bootstrap-switch/readme/
  plot 图稍微看一下 //todo
 
 3. 贝叶斯用法
+
+4. scatter
+https://blog.csdn.net/anneqiqi/article/details/64125186
+其中 s表示点的大小：s参数：指定点的大 小，值和点的面积成正比。它可以是一个数，指定所有点的大小；也可以是数组，分别对每个点指定大小
