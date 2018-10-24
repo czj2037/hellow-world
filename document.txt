@@ -101,3 +101,7 @@ https://blog.csdn.net/briblue/article/details/73824058/
 24. high performance spark下载地址
 http://opencarts.org/sachlaptrinh/pdf/28044.pdf 
 https://github.com/high-performance-spark/high-performance-spark-examples
+
+25. jupyte notebook 本地路径修改
+ a).everything 搜索jupyter_notebook_config.py
+ b)修改c.NotebookApp.notebook_dir路径
