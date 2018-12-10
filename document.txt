@@ -124,5 +124,19 @@ https://blog.csdn.net/anneqiqi/article/details/64125186
 （adjusted rand index，ARI）和归一化互信息（normalized mutual information，NMI），二者
 都给出了定量的度量，其最佳值为1，0 表示不相关的聚类（虽然ARI 可以取负值）。
 
-7.KernelDensity 核密度估计
+30.KernelDensity 核密度估计
 https://blog.csdn.net/unixtch/article/details/78556499
+
+31.python中np.multiply（）、np.dot（）和星号（*）
+https://blog.csdn.net/zenghaitao0128/article/details/78715140
+数组场景
+multyiply:对应元素相乘，还是一个数组
+dot:      秩为1，相乘再相加，输出标量；秩不为1，矩阵乘法
+*:        对应元素相乘，还是一个数组
+矩阵场景
+multyiply:对应位置元素相乘，然后相加，输出标量
+dot:      矩阵乘法
+*:        矩阵乘法
+
+32.
+新数组的shape属性应该要与原来数组的一致，即新数组元素数量与原数组元素数量要相等。一个参数为-1时，那么reshape函数会根据另一个参数的维度计算出数组的另外一个shape属性值。
