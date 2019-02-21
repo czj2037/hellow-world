@@ -12,3 +12,11 @@ https://www.cnblogs.com/wxd0108/p/5479442.html
 
 https://blog.csdn.net/lsshlsw/article/details/49155087
 http://lxw1234.com/archives/category/spark
+
+5.
+log4j.logger.org.springframework.orm.jpa=DEBUG
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
