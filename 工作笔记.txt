@@ -14,3 +14,11 @@ http://lxw1234.com/archives/category/spark
 https://blog.csdn.net/u013235478/article/details/50625677
 
 6.生产者消费者模型
+
+7.
+log4j.logger.org.springframework.orm.jpa=DEBUG
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
