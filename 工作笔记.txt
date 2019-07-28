@@ -30,4 +30,5 @@ http://www.logback.cn/04%E7%AC%AC%E5%9B%9B%E7%AB%A0Appenders.html
 https://github.com/aisuhua/restful-api-design-references
 
 12. status code
+https://github.com/bolasblack/http-api-guide
 https://www.ibm.com/developerworks/cn/web/1103_chenyan_restapi/
