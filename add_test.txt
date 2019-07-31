@@ -1,5 +1,0 @@
-abc
-git 2017-09-13
-readme-ed branch new line
-def
-
