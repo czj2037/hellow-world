@@ -34,3 +34,8 @@ https://github.com/bolasblack/http-api-guide
 https://www.ibm.com/developerworks/cn/web/1103_chenyan_restapi/
 
 13.tune spark job
+翻译文 缺图片
+https://www.zybuluo.com/xiaop1987/note/76737
+https://www.zybuluo.com/xiaop1987/note/102894
+
+http://ju.outofmemory.cn/entry/203097 原文
