@@ -41,3 +41,10 @@ https://www.zybuluo.com/xiaop1987/note/102894
 http://ju.outofmemory.cn/entry/203097 原文
 
 14. Octotree
+
+15.flushmode 为read，临时规避办法，不检查读写
+	<bean id="hibernateTemplate"
+		class="org.springframework.orm.hibernate4.HibernateTemplate"
+		  p:sessionFactory-ref="sessionFactory" >
+		<property name="checkWriteOperations" value="false"/>
+	</bean>
