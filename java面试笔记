@@ -48,3 +48,101 @@ AppClassLoader(应用程序类加载器) :面向我们用户的加载器，负�
 当父类加载器无法处理时，才由自己来处理。当父类加载器为null时，会使用启动类加载器 BootstrapClassLoader 作为父类加载器。
 
 5. 三次握手，四次挥手
+
+6.acid
+原子性 一致性 
+隔离性 持久性
+
+6.
+一个 SQL 执行的很慢，我们要分两种情况讨论：
+
+1、大多数情况下很正常，偶尔很慢，则有如下原因
+(1)、数据库在刷新脏页，例如 redo log 写满了需要同步到磁盘。
+(2)、执行的时候，遇到锁，如表锁、行锁。
+
+2、这条 SQL 语句一直执行的很慢，则有如下原因。
+(1)、没有用上索引：例如该字段没有索引；由于对字段进行运算、函数操作导致无法用索引。
+(2)、数据库选错了索引
+
+7.
+ZooKeeper 的设计目标是将那些复杂且容易出错的分布式一致性服务封装起来，构成一个高效可靠的原语集，并以一系列简单易用的接口提供给用户使用。
+ZooKeeper 是一个典型的分布式数据一致性解决方案，分布式应用程序可以基于 ZooKeeper 实现诸如数据发布/订阅、负载均衡、命名服务、分布式协调/通知、集群管理、Master 选举、分布式锁和分布式队列等功能
+
+8.redis
+redis 的数据是存在内存中的，所以读写速度非常快，因此 redis 被广泛应用于缓存方向。
+主要从“高性能”和“高并发”这两点来看待这个问题。
+
+9.spring 设计模式
+工厂设计模式 : Spring使用工厂模式通过 BeanFactory、ApplicationContext 创建 bean 对象。
+代理设计模式 : Spring AOP 功能的实现。
+单例设计模式 : Spring 中的 Bean 默认都是单例的。
+模板方法模式 : Spring 中 jdbcTemplate、hibernateTemplate 等以 Template 结尾的对数据库操作的类，它们就使用到了模板模式。
+包装器设计模式 : 我们的项目需要连接多个数据库，而且不同的客户在每次访问中根据需要会去访问不同的数据库。这种模式让我们可以根据客户的需求能够动态切换不同的数据源。
+观察者模式: Spring 事件驱动模型就是观察者模式很经典的一个应用。
+适配器模式 :Spring AOP 的增强或通知(Advice)使用到了适配器模式、spring MVC 中也是用到了适配器模式适配Controller。
+
+
+10.
+1. 你使用过哪些组件或者方法来提升网站性能,可用性以及并发量
+提高硬件能力、增加系统服务器。（当服务器增加到某个程度的时候系统所能提供的并发访问量几乎不变，所以不能根本解决问题）
+使用缓存
+消息队列 （解耦+削峰+异步）
+采用分布式开发 （不同的服务部署在不同的机器节点上，并且一个服务也可以部署在多台机器上，然后利用 Nginx 负载均衡访问。这样就解决了单点部署(All In)的缺点，大大提高的系统并发量）
+数据库分库（读写分离）、分表（水平分表、垂直分表）
+采用集群 （多台机器提供相同的服务）
+CDN 加速 (将一些静态资源比如图片、视频等等缓存到离用户最近的网络节点)
+浏览器缓存
+使用合适的连接池（数据库连接池、线程池等等）
+适当使用多线程进行开发。
+
+
+11.
+客户端发送请求-> 前端控制器 DispatcherServlet 接受客户端请求 -> 找到处理器映射 HandlerMapping 解析请求对应的 Handler-> HandlerAdapter 会根据 Handler 来调用真正的处理器处理请求，并处理相应的业务逻辑 -> 处理器返回一个模型视图 ModelAndView -> 视图解析器进行解析 -> 返回一个视图对象->前端控制器 DispatcherServlet 渲染数据（Model）->将得到视图对象返回给用户
+
+12. 线程池
+降低资源消耗。 通过重复利用已创建的线程降低线程创建和销毁造成的消耗。
+提高响应速度。 当任务到达时，任务可以不需要的等到线程创建就能立即执行。
+提高线程的可管理性。 线程是稀缺资源，如果无限制的创建，不仅会消耗系统资源，还会降低系统的稳定性，使用线程池可以进行统一的分配，调优和监控。
+
+FixedThreadPool： 适用于为了满足资源管理需求，而需要限制当前线程数量的应用场景。它适用于负载比较重的服务器；
+SingleThreadExecutor： 适用于需要保证顺序地执行各个任务并且在任意时间点，不会有多个线程是活动的应用场景；
+CachedThreadPool： 适用于执行很多的短期异步任务的小程序，或者是负载较轻的服务器；
+ScheduledThreadPoolExecutor： 适用于需要多个后台执行周期任务，同时为了满足资源管理需求而需要限制后台线程的数量的应用场景；
+SingleThreadScheduledExecutor： 适用于需要单个后台线程执行周期任务，同时保证顺序地执行各个任务的应用场景。
+
+
+
+为什么我们调用start()方法时会执行run()方法，为什么我们不能直接调用run()方法？
+总结： 调用start方法方可启动线程并使线程进入就绪状态，而run方法只是thread的一个普通方法调用，还是在主线程里执行。
+
+Spring容器初始化
+=====================================
+调用GiraffeService无参构造函数
+GiraffeService中利用set方法设置属性值
+调用setBeanName:: Bean Name defined in context=giraffeService
+调用setBeanClassLoader,ClassLoader Name = sun.misc.Launcher$AppClassLoader
+调用setBeanFactory,setBeanFactory:: giraffe bean singleton=true
+调用setEnvironment
+调用setResourceLoader:: Resource File Name=spring-beans.xml
+调用setApplicationEventPublisher
+调用setApplicationContext:: Bean Definition Names=[giraffeService, org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0, com.giraffe.spring.service.GiraffeServicePostProcessor#0]
+执行BeanPostProcessor的postProcessBeforeInitialization方法,beanName=giraffeService
+调用PostConstruct注解标注的方法
+执行InitializingBean接口的afterPropertiesSet方法
+执行配置的init-method
+执行BeanPostProcessor的postProcessAfterInitialization方法,beanName=giraffeService
+Spring容器初始化完毕
+=====================================
+从容器中获取Bean
+giraffe Name=李光洙
+=====================================
+调用preDestroy注解标注的方法
+执行DisposableBean接口的destroy方法
+执行配置的destroy-method
+Spring容器关闭
+
+
+
+部门业务，职位调整
+吸引你的地方，
+我还有什么欠缺，单纯看书，不够深入，工作比较忙，如何提高
