@@ -63,3 +63,8 @@ public int firstBadVersion(int n) {
     }
     return l;
 }
+
+17.
+《Kubernetes实战 》
+《Kubernetes权威指南:从Docker到Kubernetes实践全接触(第2版)》
+k8s中文文档 http://docs.kubernetes.org.cn/
