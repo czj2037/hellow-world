@@ -14,7 +14,8 @@ http://lxw1234.com/archives/category/spark
 https://blog.csdn.net/u013235478/article/details/50625677
 
 6.生产者消费者模型
-
+生产者使用“? extends T”通配符，消费者使用“? super T”通配符
+https://blog.csdn.net/xx326664162/article/details/52175283
 7.
 log4j.logger.org.springframework.orm.jpa=DEBUG
         <dependency>
