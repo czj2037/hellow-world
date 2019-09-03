@@ -108,3 +108,6 @@ k8s中文文档 http://docs.kubernetes.org.cn/
 
 19.数据库锁 事务隔离级别
 锁总结https://tech.meituan.com/2014/08/20/innodb-lock.html
+
+20.背包问题
+https://blog.csdn.net/qq_38410730/article/details/81667885
