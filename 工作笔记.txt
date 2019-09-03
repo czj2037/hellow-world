@@ -12,6 +12,9 @@ http://lxw1234.com/archives/category/spark
 
 5.b+树适合做索引
 https://blog.csdn.net/u013235478/article/details/50625677
+MyISAM——非聚簇索引
+InnoDB——聚簇索引
+https://blog.csdn.net/tongdanping/article/details/79878302
 
 6.生产者消费者模型
 生产者使用“? extends T”通配符，消费者使用“? super T”通配符
