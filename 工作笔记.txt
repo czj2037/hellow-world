@@ -111,3 +111,9 @@ k8s中文文档 http://docs.kubernetes.org.cn/
 
 20.背包问题
 https://blog.csdn.net/qq_38410730/article/details/81667885
+
+21.kafka
+http://www.kafka.cc  面试
+https://www.springcloud.cc/apache-kafka-zhcn.html   kafka学习
+https://www.orchome.com/kafka/index  kafka学习
+https://blog.csdn.net/lizhitao/article/details/39499283 李志涛博客
