@@ -27,3 +27,13 @@ B,广州恒大
 C,上海申花
 D,山东鲁能
 E,大连一方
+
+create table if not exists grade(
+stno,bigInt,
+gender, String,
+classNo,int,
+gra, float,
+testtime,date
+)row format delimited fields terminated by ','
+
+select stno,sum(gra) as gra from grade where gender='m' group by stno having gra <60 order by stno ;
