@@ -1,0 +1,29 @@
+select RQ,
+sum(case RS when '胜'  then 1 else 0 end )as '胜',
+sum(case RS  when '负'  then 1 else 0 end  ) as '负'
+from  Game GROUP BY RQ HAVING RQ<'2016-05-11';
+
+SELECT game.RT,Team.TN,
+sum(if(RS= '胜',1,0))as '胜',
+sum(if(RS= '负',1,0 ))as '负'
+from game,team
+WHERE game.RT=team.RT GROUP BY game.RT order by game.RT;
+
+2016-05-09,A,胜
+2016-05-09,C,胜
+2016-05-09,B,负
+2016-05-09,E,负
+2016-05-10,A,胜
+2016-05-10,E,负
+2016-05-10,C,负
+2016-05-10,B,负
+2016-05-11,A,胜
+2016-05-11,B,负
+2016-05-11,D,胜
+2016-05-11,C,负
+
+A,北京国安
+B,广州恒大
+C,上海申花
+D,山东鲁能
+E,大连一方
