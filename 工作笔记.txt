@@ -117,3 +117,6 @@ http://www.kafka.cc  面试
 https://www.springcloud.cc/apache-kafka-zhcn.html   kafka学习
 https://www.orchome.com/kafka/index  kafka学习
 https://blog.csdn.net/lizhitao/article/details/39499283 李志涛博客
+
+22.spring cloud
+http://www.ityouknow.com/springcloud/2016/12/30/springcloud-collect.html
