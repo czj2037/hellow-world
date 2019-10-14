@@ -29,3 +29,11 @@ public ListNode removeNthFromEnd(ListNode head, int n) {
     }
     slow.next = slow.next.next;
     return head;
+
+2.位计算
+<< 左移    a<<b=a* 2^b
+>> 右移    a>>b=a/(2^b)
+>>>无符号右移   低位溢出并舍弃，高位补0
+
+https://blog.csdn.net/black_bird_cn/article/details/80171652
+https://blog.csdn.net/weixin_37490221/article/details/90905087
