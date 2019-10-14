@@ -1,5 +1,5 @@
 1. 链表中除了常规的循环外，还要考虑
-双指针，如一快一慢：归并两个有序的链表
+a.双指针，如一快一慢：归并两个有序的链表
  public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
     if (l1 == null) return l2;
     if (l2 == null) return l1;
@@ -11,7 +11,7 @@
         return l2;
     }
 }
-递归：
+b.递归：
  删除链表的倒数第 n 个节点
 Given 1->1->2, return 1->2.
 Given 1->1->2->3->3, return 1->2->3.
@@ -29,6 +29,14 @@ public ListNode removeNthFromEnd(ListNode head, int n) {
     }
     slow.next = slow.next.next;
     return head;
+    
+ c. 两个函数互相递归
+ function A(TreeNode t){
+   B(t),A(t.left),A(t.right)
+ }
+  function B(TreeNode t){
+ }
+ 
 
 2.位计算
 << 左移    a<<b=a* 2^b
