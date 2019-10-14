@@ -1,0 +1,31 @@
+1. 链表中除了常规的循环外，还要考虑
+双指针，如一快一慢：归并两个有序的链表
+ public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+    if (l1 == null) return l2;
+    if (l2 == null) return l1;
+    if (l1.val < l2.val) {
+        l1.next = mergeTwoLists(l1.next, l2);
+        return l1;
+    } else {
+        l2.next = mergeTwoLists(l1, l2.next);
+        return l2;
+    }
+}
+递归：
+ 删除链表的倒数第 n 个节点
+Given 1->1->2, return 1->2.
+Given 1->1->2->3->3, return 1->2->3.
+
+public ListNode removeNthFromEnd(ListNode head, int n) {
+    ListNode fast = head;
+    while (n-- > 0) {
+        fast = fast.next;
+    }
+    if (fast == null) return head.next;
+    ListNode slow = head;
+    while (fast.next != null) {
+        fast = fast.next;
+        slow = slow.next;
+    }
+    slow.next = slow.next.next;
+    return head;
