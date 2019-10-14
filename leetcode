@@ -37,6 +37,9 @@ public ListNode removeNthFromEnd(ListNode head, int n) {
   function B(TreeNode t){
  }
  
+ d.
+  //递归只要自己符合逻辑，即可；这题的关键是在于如何判断是左叶子 isLeaf(root.left)
+ 
 
 2.位计算
 << 左移    a<<b=a* 2^b
