@@ -1,3 +1,16 @@
+pk权限 PI,权限
+string，hash，list,set,zset
+
+create put get scan delete disable
+
+sqoop、dataX、flume
+
+add = lambda x, y : x+y
+add(1,2) 
+1、使用Python写一些执行脚本时，使用Lambda可以省去定义函数的过程，让代码更加精简。 简单 
+2、对于一些抽象的，不会别的地方再复用的函数，有时候给函数起个名字也是个难题，使用Lambda不需要考虑命名的问题。一次使用
+3、使用Lambda在某些时候让代码更容易理解 便于理解 函数式编程
+
 val a = Array(12, 6, 15, 2, 20, 9)
  a.reduceLeft(_ + _)
 
@@ -43,6 +56,50 @@ WHERE game.RT=team.RT GROUP BY game.RT order by game.RT;
 2016-05-11,B,负
 2016-05-11,D,胜
 2016-05-11,C,负
+
+#!/user/bin/python
+def count_letter(x):
+  count = 0
+  for i in x:
+    if i >= 'a' and i < = 'z':
+      count = count + 1
+    if i >= 'A' and i < = 'Z':
+      count = count + 1 
+  return count
+
+def count_numeric(x):
+  count = 0
+  for i in x:
+    if i >= '0' and i < = '9':
+      count = count + 1
+  return count
+
+def count(x):
+  print('英文字母数：', count_letter(x))
+  print('数字个数：', count_num(x))
+
+def __name__=='__main__'
+ count(*sys.argv[1:])
+  
+  
+shell:
+python2: python2 abc124
+python3: python3 abc124
+
+import numpy as np
+def compute_avg(age_list):
+  age_set=set(age_list)
+  ages=[age for _ ,age in age_set if age is not Noe]
+  avg_tmp=np.mean(ages)
+  res=[]
+  for _,age in age_set:
+    if age is None:
+	  res.append(avg_temp*1.2)
+	else:
+	  res.append(avg_temp)
+  return np.mean(res)
+
+
 
 A,北京国安
 B,广州恒大
