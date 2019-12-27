@@ -1,0 +1,79 @@
+1. 链表中除了常规的循环外，还要考虑
+a.双指针，如一快一慢：归并两个有序的链表
+ public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+    if (l1 == null) return l2;
+    if (l2 == null) return l1;
+    if (l1.val < l2.val) {
+        l1.next = mergeTwoLists(l1.next, l2);
+        return l1;
+    } else {
+        l2.next = mergeTwoLists(l1, l2.next);
+        return l2;
+    }
+}
+b.递归：
+ 删除链表的倒数第 n 个节点
+Given 1->1->2, return 1->2.
+Given 1->1->2->3->3, return 1->2->3.
+
+public ListNode removeNthFromEnd(ListNode head, int n) {
+    ListNode fast = head;
+    while (n-- > 0) {
+        fast = fast.next;
+    }
+    if (fast == null) return head.next;
+    ListNode slow = head;
+    while (fast.next != null) {
+        fast = fast.next;
+        slow = slow.next;
+    }
+    slow.next = slow.next.next;
+    return head;
+    
+ c. 两个函数互相递归
+ function A(TreeNode t){
+   B(t),A(t.left),A(t.right)
+ }
+  function B(TreeNode t){
+ }
+ 
+ d.
+  //递归只要自己符合逻辑，即可；这题的关键是在于如何判断是左叶子 isLeaf(root.left)
+ 
+
+2.位计算
+<< 左移    a<<b=a* 2^b
+>> 右移    a>>b=a/(2^b)
+>>>无符号右移   低位溢出并舍弃，高位补0
+
+https://blog.csdn.net/black_bird_cn/article/details/80171652
+https://blog.csdn.net/weixin_37490221/article/details/90905087
+
+3.BST
+二叉查找树中序遍历有序,可以先转为一个有序数组
+1.  在二叉查找树中寻找两个节点，使它们的和为一个给定值
+
+Input:
+
+    5
+   / \
+  3   6
+ / \   \
+2   4   7
+
+Target = 9
+
+Output: True
+
+ 2.在二叉查找树中查找两个节点之差的最小绝对值
+Input:
+
+   1
+    \
+     3
+    /
+   2
+
+Output:
+
+1
