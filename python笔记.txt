@@ -1,3 +1,126 @@
+1.
+1.1 python api 2.6
+https://www.w3cschool.cn/python/dict
+
+1.2 python  time模块
+https://blog.csdn.net/lina_acm/article/details/60151702
+https://blog.csdn.net/cmzsteven/article/details/64906245
+
+1.3lamba 表达式
+https://www.cnblogs.com/guigujun/p/6134828.html
+
+1.4. python常见库
+https://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+1.5.机器学习 学霸笔记
+http://www.cnblogs.com/tornadomeet/tag/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/default.html?page=2
+
+1.6. 机器学习实战地址
+https://github.com/pbharrin/machinelearninginaction.git
+
+1.7 numpy中的multiply、*、matul 的区别
+https://www.cnblogs.com/xiaodongsuibi/p/8305921.html
+
+1.8 svm
+https://blog.csdn.net/luoshixian099/article/details/51227754
+svm
+http://www.cnblogs.com/pinard/
+看评论
+https://www.jianshu.com/p/ba59631855a3
+
+1.9
+新数组的shape属性应该要与原来数组的一致，即新数组元素数量与原数组元素数量要相等。一个参数为-1时，那么reshape函数会根据另一个参数的维度计算出数组的另外一个shape属性值。
+
+1.10 Apriori FP-growth
+http://www.cnblogs.com/qwertWZ/p/4510857.html#_labelTop
+
+1.11 pairwise_distances
+    print(np.argmin(c, axis=0))  # 按每列求出最小值的索引
+    print(np.argmin(c, axis=1))  # 按每行求出最小值的索引
+
+
+1.12 scatter
+https://blog.csdn.net/anneqiqi/article/details/64125186
+其中 s表示点的大小：s参数：指定点的大 小，值和点的面积成正比。它可以是一个数，指定所有点的大小；也可以是数组，分别对每个点指定大小
+
+1.13
+有一些指标可用于评估聚类算法相对于真实聚类的结果，其中最重要的是调整rand 指数
+（adjusted rand index，ARI）和归一化互信息（normalized mutual information，NMI），二者
+都给出了定量的度量，其最佳值为1，0 表示不相关的聚类（虽然ARI 可以取负值）。
+
+1.14 KernelDensity 核密度估计
+https://blog.csdn.net/unixtch/article/details/78556499
+
+1.15 python中np.multiply（）、np.dot（）和星号（*）
+https://blog.csdn.net/zenghaitao0128/article/details/78715140
+数组场景
+multyiply:对应元素相乘，还是一个数组
+dot:      秩为1，相乘再相加，输出标量；秩不为1，矩阵乘法
+*:        对应元素相乘，还是一个数组
+矩阵场景
+multyiply:对应位置元素相乘，然后相加，输出标量
+dot:      矩阵乘法
+*:        矩阵乘法
+
+1.16
+     eta = 2.0 * oS.X[i, :]*oS.X[j, :].T - oS.X[i, :]*oS.X[i, :].T - oS.X[j, :]*oS.X[j, :].T
+     #如果最优修改量大于0，则不做处理直接跳出本次循环，这里对真实SMO做了简化处理
+     if eta >= 0: print("eta>=0"); return 0
+	
+
+2.
+2.1 conda包管理
+conda install ipykernel  
+jupyter notebook 
+source activate 环境名称 
+python -m ipykernel install --user --name base --display-name "Python (base)"  
+
+https://www.jianshu.com/p/17288627b994
+
+https://www.jianshu.com/p/2f3be7781451
+
+2.2 jupyte notebook 本地路径修改
+ a)在Anaconda Prompt终端中输入下面命令，查看你的notebook配置文件在哪里：
+   jupyter notebook --generate-config
+ b)打开jupyter_notebook_config.py
+ c)修改c.NotebookApp.notebook_dir路径
+https://www.jianshu.com/p/8f3b4333c979
+
+2.3 pycharm
+function name should be lowercase
+File –>Settings–>Editor–>Inspections–>Python–>PEP 8 naming convention violation
+
+在右下角有一个Ignored errors列表控件，添加 
+N802
+N803
+N806
+
+3. 专栏，库，资料 
+3.1 面试题
+https://blog.csdn.net/sqiu_11/article/details/77657840
+
+3.2 库
+numpy
+    https://www.cnblogs.com/keepgoingon/p/7137448.html
+matplotlib
+    https://www.jianshu.com/p/aa4150cf6c7f?winzoom=1
+
+3.3 学习专栏
+https://zhuanlan.zhihu.com/p/27662928
+https://zhuanlan.zhihu.com/pytlab
+http://www.cnblogs.com/pinard/default.html?page=9
+
+3.4 python在线学习
+https://python3-cookbook.readthedocs.io/zh_CN/latest/copyright.html
+
+4. 书
+Python 数据处理
+《利用python进行数据分析》
+台湾教授  https://www.csie.ntu.edu.tw/~htlin/mooc/	
+
+
+
+python笔记
 1.isinstance type is
 
  type()不会认为子类是一种父类类型。
@@ -74,9 +197,7 @@
   
  7.函数式编程
   map，filter，reduce
-  
   any，all
-  
   eunumerate zip
 
 8. classmethod: 会调用类有关的参数，常用于构造，（比如类似于c++的重载）
