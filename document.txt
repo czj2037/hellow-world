@@ -143,3 +143,6 @@ dot:      矩阵乘法
 
 33. spring cloud
 http://www.ityouknow.com/springcloud/2016/12/30/springcloud-collect.html
+
+34.python在线学习
+https://python3-cookbook.readthedocs.io/zh_CN/latest/copyright.html
