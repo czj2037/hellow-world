@@ -23,7 +23,8 @@ octotree
 sourcegraph
 
 8.spark
-8.* https://www.cnblogs.com/shishanyuan/p/4699644.html
-8.* 书籍下载
+* https://www.cnblogs.com/shishanyuan/p/4699644.html
+* 书籍下载
   http://www.jb51.net/books/510193.html
   Spark快速大数据分析
+  http://www.ddooo.com/softdown/100999.htm  spark高级数据分析
