@@ -1,0 +1,46 @@
+工程已下载
+1.live711 / pdf-books-- https://github.com/live711/pdf-books
+2.zhangbc / eBooks-- https://github.com/zhangbc/eBooks
+3. Taosky / ebooks-- https://github.com/Taosky/ebooks  在gitee上
+4. 开源类书籍https://github.com/justjavac/free-programming-books-zh_CN
+网盘已下载
+1. xjq7 / books-- https://github.com/xjq7/books
+2.
+
+
+网盘未下载
+1.itdevbooks / pdf-- https://github.com/itdevbooks/pdf  ---zip文件
+ #2021.5.10 
+  ## docker章节已保存到网盘
+  ## spark
+  ## spring
+  ## spring boot
+  ## spring cloud
+  ## zookeeper
+  ## 并发编程
+  ## java
+  ## jvm
+  ## kafka
+2.javadevbooks/books / pdf-- https://github.com/javadevbooks/books  ---zip文件  --- 需要关注公众号获取密码
+3.tangtangcoding / C-C- --https://github.com/tangtangcoding/C-C-  ----zip文件--- 需要关注公众号获取密码
+4.gsjqwyl / awesome-ebook-- https://github.com/gsjqwyl/awesome-ebook ---pdf
+5.ebooklist / awesome-ebooks-list--https://github.com/ebooklist/awesome-ebooks-list  ----zip文件--- 需要关注公众号获取密码
+
+
+无法下载的
+1.alexanderqiu/ebooks-- https://github.com/alexanderqiu/ebooks
+2.niuxinghua/SpringBooks-- https://github.com/niuxinghua/SpringBooks
+3.syscall0x80 / ebook-- https://github.com/syscall0x80/ebook
+
+
+网址类
+
+2.jujunchen / ebook-- https://github.com/jujunchen/ebook#%E6%9E%B6%E6%9E%84
+
+
+
+一. spring
+1.
+Spring.MVC-A.Tutorial-Spring.MVC学习指南.pdf
+下载网址：https://www.jb51.net/books/621540.html
+源码：https://books.brainysoftware.com/download
