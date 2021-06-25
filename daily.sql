@@ -248,3 +248,21 @@ DELIMITER ;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2021-06-24 19:13:29
+
+###2021/0605
+    public static void main(String[] args) throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.jdbc.Driver");
+        String url="jdbc:mysql://localhost:3306/school?useUnicode=true&characterEncoding=utf8&useSSL=true";
+        String username="root";
+        String password="123456";
+        Connection connection= getConnection(url,username,password);
+        Statement statement=connection.createStatement();
+        String sql="select * from teacher";
+        ResultSet resultSet=statement.executeQuery(sql);
+        List<String> names=new ArrayList<String>();
+        while (resultSet.next()){
+            names.add(resultSet.getString("name"));
+        }
+        System.out.println(String.join(";",names));
+
+    }
