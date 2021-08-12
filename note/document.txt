@@ -1,0 +1,64 @@
+ 1.spring mvc
+https://blog.csdn.net/qq_35246620/article/details/54728986
+
+2. git 回退
+https://blog.csdn.net/sinat_29774479/article/details/78599702
+
+3.spring博客
+https://www.cnblogs.com/szlbm/category/830578.html
+
+4. 注解
+https://blog.csdn.net/briblue/article/details/73824058/
+
+5. high performance spark下载地址
+http://opencarts.org/sachlaptrinh/pdf/28044.pdf 
+https://github.com/high-performance-spark/high-performance-spark-examples
+
+6. spring cloud
+http://www.ityouknow.com/springcloud/2016/12/30/springcloud-collect.html
+
+
+7.github 插件
+octotree
+sourcegraph
+
+8.spark
+* https://www.cnblogs.com/shishanyuan/p/4699644.html
+* 书籍下载
+  http://www.jb51.net/books/510193.html
+  Spark快速大数据分析
+  http://www.ddooo.com/softdown/100999.htm  spark高级数据分析
+  
+9.https://www.cnblogs.com/kaleidoscope/p/9766720.html
+
+
+10.<<Writing Beautiful Apache Spark Code>> 
+book https://bbs.pediy.com/thread-264946-1.htm
+video:https://www.youtube.com/user/matthewkevinpowers/videos
+code online:https://community.cloud.databricks.com/  czj1319@163.com
+还没有看完 sbt ,describe
+
+11.开源学习的网站 https://www.bookstack.cn/
+
+
+12.
+https://man.linuxde.net/
+https://www.linuxcool.com/
+https://zhuanlan.zhihu.com/p/339085252
+spring：https://docs.spring.io/spring-framework/docs/5.2.0.RELEASE/spring-framework-reference/core.html#null-safety
+狂神：https://www.kuangstudy.com/course
+书籍搜索：https://idevbox.com/book
+<<spring实战>> 第5版
+《Spring实战》、《Spring微服务实战》、《Spring Boot实战》
+
+<<中台架构与实现-基于DDD和微服务>>
+
+外网访问虚拟机
+https://www.cnblogs.com/wisdom-projects/p/11181019.html
+
+可以下载的电子书的网址
+https://github.com/justjavac/free-programming-books-zh_CN
+https://github.com/zhangbc/eBooks
+https://github.com/niuxinghua/SpringBooks  链接下载
+https://github.com/javadevbooks/books
+

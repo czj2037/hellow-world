@@ -1,5 +1,0 @@
-1.<<Writing Beautiful Apache Spark Code>> 
-book https://bbs.pediy.com/thread-264946-1.htm
-video:https://www.youtube.com/user/matthewkevinpowers/videos
-code online:https://community.cloud.databricks.com/  czj1319@163.com
-还没有看完 sbt ,describe

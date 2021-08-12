@@ -1,0 +1,125 @@
+1.bootsrap switch
+http://www.bootcdn.cn/bootstrap-switch/readme/
+
+2.spring
+https://blog.csdn.net/a745233700/article/details/80959716
+https://blog.csdn.net/ying847782627/article/details/51508303
+3.java多线程
+https://www.cnblogs.com/wxd0108/p/5479442.html
+4.spark调优
+https://blog.csdn.net/lsshlsw/article/details/49155087
+http://lxw1234.com/archives/category/spark
+
+5.b+树适合做索引
+https://blog.csdn.net/u013235478/article/details/50625677
+MyISAM——非聚簇索引
+InnoDB——聚簇索引
+https://blog.csdn.net/tongdanping/article/details/79878302
+
+6.生产者消费者模型
+生产者使用“? extends T”通配符，消费者使用“? super T”通配符
+https://blog.csdn.net/xx326664162/article/details/52175283
+7.
+log4j.logger.org.springframework.orm.jpa=DEBUG
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+8. logback配置文档
+http://www.logback.cn/04%E7%AC%AC%E5%9B%9B%E7%AB%A0Appenders.html
+
+9.restful
+https://github.com/aisuhua/restful-api-design-references
+
+12. status code
+https://github.com/bolasblack/http-api-guide
+https://www.ibm.com/developerworks/cn/web/1103_chenyan_restapi/
+
+13.tune spark job
+翻译文 缺图片
+https://www.zybuluo.com/xiaop1987/note/76737
+https://www.zybuluo.com/xiaop1987/note/102894
+
+http://ju.outofmemory.cn/entry/203097 原文
+
+14. Octotree
+
+15.flushmode 为read，临时规避办法，不检查读写
+	<bean id="hibernateTemplate"
+		class="org.springframework.orm.hibernate4.HibernateTemplate"
+		  p:sessionFactory-ref="sessionFactory" >
+		<property name="checkWriteOperations" value="false"/>
+	</bean>
+
+16.
+l = mid + 1; 能退出循环
+public int firstBadVersion(int n) {
+    int l = 1, h = n;
+    while (l < h) {
+        int mid = l + (h - l) / 2;
+        if (isBadVersion(mid)) {
+            h = mid;
+        } else {
+            l = mid + 1;
+        }
+    }
+    return l;
+}
+
+17.
+《Kubernetes实战 》
+《Kubernetes权威指南:从Docker到Kubernetes实践全接触(第2版)》
+k8s中文文档 http://docs.kubernetes.org.cn/
+
+18.数据库索引 https://juejin.im/post/5b55b842f265da0f9e589e79
+1)MySQL B+树索引和哈希索引的区别
+  哈希索引缺点总结版：https://juejin.im/post/5b55b842f265da0f9e589e79, 具体版https://www.cnblogs.com/zengkefu/p/5647279.html
+  哈希索引也没办法利用索引完成排序
+  不支持最左匹配原则
+  在有大量重复键值情况下，哈希索引的效率也是极低的---->哈希碰撞问题。
+  不支持范围查询
+ 
+  B+树索引的关键字检索效率比较平均，不像B树那样波动幅度大，在有大量重复键值情况下，哈希索引的效率也是极低的，因为存在所谓的哈希碰撞问题。
+
+2)
+  MyISAM——非聚簇索引
+  InnoDB——聚簇索引
+  https://blog.csdn.net/tongdanping/article/details/79878302
+  
+  https://blog.csdn.net/doctor_who2004/article/details/77414742
+  mysqlInnoDB存储引擎 是支持hash索引的，不过，我们必须启用，hash索引的创建由InnoDB存储引擎引擎自动优化创建，我们干预不了
+ 
+ 3) 最左匹配原则
+ https://www.cnblogs.com/lanqi/p/10282279.html
+ 顾名思义：最左优先，以最左边的为起点任何连续的索引都能匹配上。同时遇到范围查询(>、<、between、like)就会停止匹配。
+例如：b = 2 如果建立(a,b)顺序的索引，是匹配不到(a,b)索引的；但是如果查询条件是a = 1 and b = 2或者a=1(又或者是b = 2 and b = 1)就可以，因为优化器会自动调整a,b的顺序。再比如a = 1 and b = 2 and c > 3 and d = 4 如果建立(a,b,c,d)顺序的索引，d是用不到索引的，因为c字段是一个范围查询，它之后的字段会停止匹配
+
+
+  索引总结  链接：https://juejin.im/post/5b55b842f265da0f9e589e79
+  索引在数据库中是一个非常重要的知识点！上面谈的其实就是索引最基本的东西，要创建出好的索引要顾及到很多的方面：
+
+  1，最左前缀匹配原则。这是非常重要、MySQL会一直向右匹配直到遇到范围查询（>,<,BETWEEN,LIKE）就停止匹配。
+  3，尽量选择区分度高的列作为索引，区分度的公式是 COUNT(DISTINCT col) / COUNT(*)。表示字段不重复的比率，比率越大我们扫描的记录数就越少。
+  4，索引列不能参与计算，尽量保持列“干净”。比如，FROM_UNIXTIME(create_time) = '2016-06-06' 就不能使用索引，原因很简单，B+树中存储的都是数据表中的字段值，但是进行检索时，需要把所有元素都应用函数才能比较，显然这样的代价太大。所以语句要写成 ： create_time = UNIX_TIMESTAMP('2016-06-06')。
+  5，尽可能的扩展索引，不要新建立索引。比如表中已经有了a的索引，现在要加（a,b）的索引，那么只需要修改原来的索引即可。
+  6，单个多列组合索引和多个单列索引的检索查询效果不同，因为在执行SQL时，MySQL只能使用一个索引，会从多个单列索引中选择一个限制最为严格的索引。
+
+19.数据库锁 事务隔离级别
+锁总结https://tech.meituan.com/2014/08/20/innodb-lock.html
+
+20.背包问题
+https://blog.csdn.net/qq_38410730/article/details/81667885
+
+21.kafka
+http://www.kafka.cc  面试
+https://www.springcloud.cc/apache-kafka-zhcn.html   kafka学习
+https://www.orchome.com/kafka/index  kafka学习
+https://blog.csdn.net/lizhitao/article/details/39499283 李志涛博客
+
+22.spring cloud
+http://www.ityouknow.com/springcloud/2016/12/30/springcloud-collect.html
+
+23. 面试
+程序员代码面试指南 IT名企算法

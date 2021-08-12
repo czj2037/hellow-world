@@ -1,0 +1,101 @@
+1.ls -h -r倒叙  -S 根据文件大小排序  -R递归 -t根据时间
+2. locate
+ updatedb, local==find -name
+ 
+3.gzip  
+gunzip=gzip -d
+
+4. zip -r b.zip b
+ unzip b.zip -d 
+ -q 不显示指令过程
+ 
+5. tar -czvf a.tar.gz b
+   tar -xzvf a.tar.gz
+
+6. user group
+chown user b.txt
+chgrp group b.txt
+usermod -g group  user 改变用户所在组
+
+8.df -lh 整体磁盘
+du -h dir1 某个目录占用情况
+ --mat-depth=1
+ -a 含文件
+ -c 列出明细的同事，增加汇总值
+一般用法
+df -lh
+df -ach dir1
+
+9.wc 统计
+-c或--bytes或--chars 只显示Bytes数。
+-l或--lines 显示行数。
+-w或--words 只显示字数。
+--help 在线帮助。
+--version 显示版本信息。
+
+10.tree
+
+11.实时查看文件
+tail -f a.log
+watch -d -n 1 "linux 命令“
+e.g. watch  -d -n 1 "cat /a.log"
+
+12.ps
+ps -aux 
+-a 所有用户进程
+-u 以用户格式
+-x 参数
+
+13.kill -9
+killall 名称
+
+14.pstree
+-p:显示pid
+-u: 显示user id
+
+15.服务
+a.临时生效
+systemctl 服务 [start|stop|restart|status] 
+e.g. systemctl iptables status
+b.永久生效
+chkconfig
+chkconfig --list
+chkconfig 服务名 --list
+chkconfig --level 5 服务名 off
+需要重启生效
+
+16.doc: telnet ip port
+
+17.top
+e.g. top -d 10 -n 20
+-d 多少秒
+-n 多少个
+P cpu顺序
+M memory
+q 退出
+
+18.netstat 
+-an 以一定顺序
+-p  显示PID
+netstat -anp
+
+19.rpm
+-qa 查询所有安装包
+-qi firefox:firefox的安装信息
+-ql firefox:firefox的所有安装软件
+-qf a.file: a属于哪个包
+-e 卸载  --nodeps 强制卸载
+-ivh  安装
+-i   install 显示安装信息
+-v   verbose 提示
+-h   hash 进度条
+
+20.spring-aop,target this---
+  https://my.oschina.net/OttoWu/blog/3304147
+  https://blog.csdn.net/wufagang/article/details/116090142
+  https://blog.csdn.net/dhaiuda/article/details/82317005
+  如果是采用面向接口编程的思想，所有的被代理对象均有实现接口，且在使用过程中均使用接口对象访问 
+  1.当this和target是接口时其实并无区别 
+  2.当this是具体的实现类时，需要谨慎判断当前是使用的JDK proxy(无效)和CGLIB(有效)的区别。 
+  3.当target时，不论是接口还是实现类，并无区别。
+
